@@ -8,4 +8,4 @@
 
 ### Link para download do executável do projeto
 
-* [Google Drive]([link1](https://drive.google.com/drive/folders/1WtSEUIpoAOQlxvyBD2GySSjJoElXjOWI?usp=sharing)https://drive.google.com/drive/folders/1WtSEUIpoAOQlxvyBD2GySSjJoElXjOWI?usp=sharing)
+* [Google Drive](https://drive.google.com/drive/folders/1WtSEUIpoAOQlxvyBD2GySSjJoElXjOWI?usp=sharing)
