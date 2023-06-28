@@ -23,3 +23,20 @@ instrucoes = [
     "Pressione F11 para Carregar os Pontos",
     "Pressione F12 para Deletar os Pontos"
 ]
+# Loop principal
+running = True
+while running:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            running = False
+        elif event.type == pygame.KEYDOWN:
+            if event.key == pygame.K_ESCAPE:
+                running = False
+            elif event.key == pygame.K_F10:
+                # Lógica para salvar os pontos
+                arquivo = open("pontos.txt", "w")
+                for posicao, nome in estrelas:
+                    arquivo.write(f"{nome},{posicao[0]},{posicao[1]}\n")
+                arquivo.close()
+                print("Pontos salvos")
+            elif event.key == pygame.K_F11:
