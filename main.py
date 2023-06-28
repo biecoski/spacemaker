@@ -40,3 +40,14 @@ while running:
                 arquivo.close()
                 print("Pontos salvos")
             elif event.key == pygame.K_F11:
+                # Lógica para carregar os pontos
+                arquivo = open("pontos.txt", "r")
+                estrelas = []
+                for linha in arquivo:
+                    dados = linha.strip().split(",")
+                    nome = dados[0]
+                    posicao = (int(dados[1]), int(dados[2]))
+                    estrelas.append((posicao, nome))
+                arquivo.close()
+                print("Pontos carregados")
+            elif event.key == pygame.K_F12:
