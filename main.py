@@ -51,3 +51,10 @@ while running:
                 arquivo.close()
                 print("Pontos carregados")
             elif event.key == pygame.K_F12:
+                # Lógica para deletar os pontos
+                estrelas = []
+                print("Pontos deletados")
+        elif event.type == pygame.MOUSEBUTTONDOWN:
+            mouse_pos = pygame.mouse.get_pos()
+            nome_estrela = simpledialog.askstring("Nome da estrela", "Digite o nome da estrela:")
+            if nome_estrela:
